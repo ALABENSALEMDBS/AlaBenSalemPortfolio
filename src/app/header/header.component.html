@@ -1,1 +1,46 @@
-<p>header works!</p>
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images\Logo-horizontal.png" alt="Logo" class="logo-img">
+    </div>
+    <ul class="nav-menu" [class.active]="menuActive">
+      <!-- <li class="nav-item">
+        <a href="#home" class="nav-link" (click)="closeMenu()">Accueil</a>
+      </li> -->
+      <li class="nav-item datetime-display">
+        <div class="datetime-wrapper">
+          <div class="date-time-info">
+            <span class="date-text">{{ currentDate }}</span>
+            <span class="time-text">{{ currentTime }}</span>
+          </div>
+          <div class="weather-info" *ngIf="weather">
+            <span class="weather-icon">{{ getWeatherIcon(weather.weathercode) }}</span>
+            <span class="weather-temp">{{ weather.temperature }}°C / Tunis</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="lang-switcher">
+      <button 
+        class="lang-btn fr" 
+        [class.active]="currentLang === 'fr'"
+        (click)="switchLanguage('fr')"
+        aria-label="Français">
+        FR
+      </button>
+      <span class="lang-separator">|</span>
+      <button 
+        class="lang-btn en" 
+        [class.active]="currentLang === 'en'"
+        (click)="switchLanguage('en')"
+        aria-label="English">
+        EN
+      </button>
+    </div>
+    <div class="hamburger" [class.active]="menuActive" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
