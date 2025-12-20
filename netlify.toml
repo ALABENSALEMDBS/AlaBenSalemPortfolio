@@ -1,6 +1,6 @@
 [build]
   command = "npm run build -- --configuration production"
-  publish = "dist/ala-ben-salem-portfolio"
+  publish = "dist/ala-ben-salem-portfolio/browser"
 
 [build.environment]
   NODE_VERSION = "20"
