@@ -29,8 +29,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-    font-family: 'Ropan', sans-serif;
-
+  font-family: 'Ropan', sans-serif;
   color: #122960;
   margin-bottom: 15px;
   position: relative;
@@ -98,20 +97,6 @@
   transform: scale(1.1);
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover .image-overlay {
-  opacity: 1;
-}
-
 .floating-card {
   position: absolute;
   bottom: 20px;
@@ -126,14 +111,7 @@
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.card-icon {
-  font-size: 1.5rem;
-}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
 .card-text {
   margin: 0;
@@ -156,7 +134,7 @@
 .job-title {
   font-size: 2rem;
   font-weight: 700;
-    font-family: 'Ropan', sans-serif;
+  font-family: 'Ropan', sans-serif;
   margin-bottom: 15px;
   background: #298AFC;
   -webkit-background-clip: text;
@@ -170,16 +148,11 @@
   gap: 8px;
   background: linear-gradient(135deg, #298AFC 0%, #122960 100%);
   color: white;
-    font-family: 'Ropan', sans-serif;
-
+  font-family: 'Ropan', sans-serif;
   padding: 8px 20px;
   border-radius: 25px;
   font-weight: 600;
   margin-bottom: 30px;
-}
-
-.about-section.animate .title-badge {
-  animation: pulse 2s ease-in-out infinite;
 }
 
 .cv-button {
@@ -195,26 +168,14 @@
   margin-bottom: 30px;
   margin-left: 10px;
   cursor: pointer;
+  border: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-}
-
-button{
-  border: none;
 }
 
 .cv-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5);
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-.badge-icon {
-  font-size: 1.2rem;
 }
 
 .motivation-text {
