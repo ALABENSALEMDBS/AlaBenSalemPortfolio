@@ -2,10 +2,11 @@ import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { AproposComponent } from "../apropos/apropos.component";
 import { CompetanceComponent } from "../competance/competance.component";
 import { CertificationComponent } from "../certification/certification.component";
+import { HeropageComponent } from "../heropage/heropage.component";
 
 @Component({
   selector: 'app-home',
-  imports: [AproposComponent, CompetanceComponent, CertificationComponent],
+  imports: [AproposComponent, CompetanceComponent, CertificationComponent, HeropageComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
