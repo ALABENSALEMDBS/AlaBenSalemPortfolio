@@ -5,6 +5,7 @@ interface Skill {
   name: string;
   icon: string;
   category: string;
+  isImage?: boolean;
 }
 
 @Component({
@@ -19,25 +20,25 @@ export class SkillsComponent {
   filters = ['All', 'Frontend', 'Backend', 'Database', 'Tools', 'Others'];
 
   skills: Skill[] = [
-    { name: 'Angular', icon: '🅰️', category: 'Frontend' },
-    { name: 'HTML5', icon: '🌐', category: 'Frontend' },
-    { name: 'CSS3', icon: '🎨', category: 'Frontend' },
-    { name: 'TypeScript', icon: '📘', category: 'Frontend' },
-    { name: 'JavaScript', icon: '📜', category: 'Frontend' },
-    { name: 'Responsive Design', icon: '📱', category: 'Frontend' },
-    { name: 'Java', icon: '☕', category: 'Backend' },
-    { name: 'Spring Boot', icon: '🍃', category: 'Backend' },
-    { name: 'Spring Security', icon: '🔒', category: 'Backend' },
-    { name: 'Microservices', icon: '⚙️', category: 'Backend' },
-    { name: 'REST API', icon: '🔌', category: 'Backend' },
-    { name: 'DevOps', icon: '🚀', category: 'Others' },
-    { name: 'Visual Studio Code', icon: '💻', category: 'Tools' },
-    { name: 'Visual Studio', icon: '🖥️', category: 'Tools' },
-    { name: 'IntelliJ IDEA', icon: '🧠', category: 'Tools' },
-    { name: 'Git', icon: '🌿', category: 'Tools' },
-    { name: 'Oracle', icon: '🗄️', category: 'Database' },
-    { name: 'MySQL', icon: '🐬', category: 'Database' },
-    { name: 'MongoDB', icon: '🍃', category: 'Database' }
+    { name: 'Angular', icon: 'images/iconSkills/angularjs-plain.png', category: 'Frontend', isImage: true },
+    { name: 'HTML5', icon: 'images/iconSkills/html5-original.png', category: 'Frontend', isImage: true },
+    { name: 'CSS3', icon: 'images/iconSkills/css3-original.png', category: 'Frontend', isImage: true },
+    { name: 'TypeScript', icon: 'images/iconSkills/typescript-original.png', category: 'Frontend', isImage: true },
+    { name: 'JavaScript', icon: 'images/iconSkills/javascript-original.png', category: 'Frontend', isImage: true },
+    { name: 'Responsive Design', icon: 'images/iconSkills/responsive-design.png', category: 'Frontend', isImage: true },
+    { name: 'Java', icon: 'images/iconSkills/java-original.png', category: 'Backend', isImage: true },
+    { name: 'Spring Boot', icon: 'images/iconSkills/spring-original.png', category: 'Backend', isImage: true },
+    { name: 'Spring Security', icon: 'images/iconSkills/spring-security.png', category: 'Backend', isImage: true },
+    { name: 'Microservices', icon: 'images/iconSkills/microservice.png', category: 'Backend', isImage: true },
+    { name: 'REST API', icon: 'images/iconSkills/rest-api.png', category: 'Backend', isImage: true },
+    { name: 'DevOps', icon: 'images/iconSkills/devops.png', category: 'Others', isImage: true },
+    { name: 'Visual Studio Code', icon: 'images/iconSkills/vscode-original.png', category: 'Tools', isImage: true },
+    { name: 'Visual Studio', icon: 'images/iconSkills/visualstudio-plain.png', category: 'Tools', isImage: true },
+    { name: 'IntelliJ IDEA', icon: 'images/iconSkills/intellij-plain.png', category: 'Tools', isImage: true },
+    { name: 'Git', icon: 'images/iconSkills/git.png', category: 'Tools', isImage: true },
+    { name: 'Oracle', icon: 'images/iconSkills/oracle-original.png', category: 'Database', isImage: true },
+    { name: 'MySQL', icon: 'images/iconSkills/mysql-original.png', category: 'Database', isImage: true },
+    { name: 'MongoDB', icon: 'images/iconSkills/mongodb-original.png', category: 'Database', isImage: true }
   ];
 
   get filteredSkills(): Skill[] {
