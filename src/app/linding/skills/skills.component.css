@@ -1,0 +1,199 @@
+.skills-section {
+  padding: 0px 0 90px 0;
+  background: #F3F7FF;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  position: relative;
+  z-index: 1;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Ropan', sans-serif;
+  color: #1E1E1E;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  font-family: 'Ropan', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background: transparent;
+  color: #1E1E1E;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Ropan', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #e8f0fe;
+  border-color: #C0D0F5;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #122960;
+  color: #F3F7FF;
+  border-color: #122960;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #1E1E1E;
+  color: #F3F7FF;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: 'Ropan', sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(18, 41, 96, 0.3);
+  background: #122960;
+}
+
+.skill-icon {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-name {
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+  .skills-section {
+    padding: 75px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .filters {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .skill-badge {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .filters {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .skill-badge {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .skill-icon {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .skill-badge {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+}

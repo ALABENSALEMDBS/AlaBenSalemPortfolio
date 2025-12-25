@@ -21,7 +21,7 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.certifications-section.animate .certifications-header {
+.certifications-header.animate {
   opacity: 1;
   transform: translateY(0);
 }
@@ -44,7 +44,7 @@
   transition: width 1.5s ease;
 }
 
-.certifications-section.animate .title-underline {
+.certifications-header.animate .title-underline {
   width: 80px;
 }
 
@@ -74,9 +74,25 @@
   cursor: pointer;
 }
 
-.certifications-section.animate .certification-card {
+.certification-card.animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+.certification-card.animate:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.certification-card.animate:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.certification-card.animate:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.certification-card.animate:nth-child(4) {
+  transition-delay: 0.4s;
 }
 
 .certification-card:hover {
@@ -167,23 +183,6 @@
 
 .cert-issuer svg {
   flex-shrink: 0;
-}
-
-/* Animation delays progressifs */
-.certifications-section.animate .certification-card:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.certifications-section.animate .certification-card:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.certifications-section.animate .certification-card:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.certifications-section.animate .certification-card:nth-child(4) {
-  transition-delay: 0.4s;
 }
 
 /* Badge effect */
