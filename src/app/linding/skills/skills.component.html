@@ -1,0 +1,27 @@
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="skills-header">
+      <h2 class="section-title">Mes Compétences</h2>
+      <p class="section-description">
+        Technologies et outils que je maîtrise pour créer des solutions innovantes
+      </p>
+    </div>
+
+    <div class="filters">
+      <button 
+        *ngFor="let filter of filters" 
+        class="filter-btn" 
+        [class.active]="activeFilter === filter"
+        (click)="setFilter(filter)">
+        {{ filter }}
+      </button>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-badge" *ngFor="let skill of filteredSkills">
+        <span class="skill-icon">{{ skill.icon }}</span>
+        <span class="skill-name">{{ skill.name }}</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -28,7 +28,7 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.about-section.animate .about-header {
+.about-header.animate {
   opacity: 1;
   transform: translateY(0);
 }
@@ -51,7 +51,7 @@
   transition: width 1.5s ease;
 }
 
-.about-section.animate .title-underline {
+.about-header.animate .title-underline {
   width: 80px;
 }
 
@@ -79,7 +79,7 @@
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.about-section.animate .about-image-wrapper {
+.about-image-wrapper.animate {
   opacity: 1;
   transform: translateX(0);
 }
@@ -145,7 +145,7 @@
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.about-section.animate .about-text {
+.about-text.animate {
   opacity: 1;
   transform: translateX(0);
 }
@@ -179,7 +179,7 @@
   transition: opacity 1s ease;
 }
 
-.about-section.animate .motivation-text {
+.motivation-text.animate {
   opacity: 1;
 }
 
