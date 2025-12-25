@@ -19,7 +19,10 @@
 
     <div class="skills-grid">
       <div class="skill-badge" *ngFor="let skill of filteredSkills">
-        <span class="skill-icon">{{ skill.icon }}</span>
+        <span class="skill-icon">
+          <img *ngIf="skill.isImage" [src]="skill.icon" [alt]="skill.name" />
+          <!-- <span *ngIf="!skill.isImage">{{ skill.icon }}</span> -->
+        </span>
         <span class="skill-name">{{ skill.name }}</span>
       </div>
     </div>
