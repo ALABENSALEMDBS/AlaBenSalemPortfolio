@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { CvModalService } from '../../services/cv-modal.service';
 
 @Component({
   selector: 'app-apropos',
@@ -15,13 +16,22 @@ export class AproposComponent implements OnInit, OnDestroy {
   isMobile = false;
   private observer!: IntersectionObserver;
 
-  constructor(private sanitizer: DomSanitizer, private elementRef: ElementRef) {
+  constructor(
+    private sanitizer: DomSanitizer, 
+    private elementRef: ElementRef,
+    private cvModalService: CvModalService
+  ) {
     this.cvUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.cvPath);
     this.checkIfMobile();
   }
 
   ngOnInit() {
     this.setupScrollAnimations();
+    
+    // S'abonner au service pour ouvrir/fermer la modal
+    this.cvModalService.cvModalState$.subscribe(state => {
+      this.isCvModalOpen = state;
+    });
   }
 
   ngOnDestroy() {
@@ -61,12 +71,10 @@ export class AproposComponent implements OnInit, OnDestroy {
   }
 
   openCvModal() {
-    this.isCvModalOpen = true;
-    document.body.style.overflow = 'hidden';
+    this.cvModalService.openCvModal();
   }
 
   closeCvModal() {
-    this.isCvModalOpen = false;
-    document.body.style.overflow = 'auto';
+    this.cvModalService.closeCvModal();
   }
 }

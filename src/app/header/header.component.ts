@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { CvModalService } from '../services/cv-modal.service';
 
 interface WeatherData {
   temperature: number;
@@ -21,7 +22,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   weather: WeatherData | null = null;
   private timeInterval: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private cvModalService: CvModalService
+  ) {}
 
   ngOnInit(): void {
     this.updateDateTime();
@@ -100,6 +104,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   closeMenu(): void {
     this.menuActive = false;
+  }
+
+  openCvModal(): void {
+    this.cvModalService.openCvModal();
+    this.closeMenu();
   }
 
   switchLanguage(lang: string): void {

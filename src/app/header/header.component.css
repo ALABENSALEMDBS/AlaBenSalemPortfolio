@@ -211,19 +211,61 @@
   border-radius: 3px;
 }
 
+/* Mobile Menu Buttons */
+.mobile-menu-item {
+  display: none;
+}
+
+.mobile-menu-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  color: #122960;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-btn:hover {
+  background: #1E1E1E;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(18, 41, 96, 0.3);
+}
+
+.mobile-menu-btn svg {
+  stroke: currentColor;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 970px) {
+  .mobile-menu-item {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
     flex-direction: column;
-  background: linear-gradient(135deg, #F3F7FF 0%, #C0D0F5 100%);
+    background: #122960;
     width: 100%;
     text-align: center;
     transition: left 0.3s ease;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 2rem 0;
+    gap: 1rem;
   }
 
   .nav-menu.active {
