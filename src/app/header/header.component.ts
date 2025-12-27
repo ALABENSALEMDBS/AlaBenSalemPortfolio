@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CvModalService } from '../services/cv-modal.service';
 import { LanguageService } from '../services/serviceLang/language.service';
-import { TranslateModule } from '@ngx-translate/core';
 
 interface WeatherData {
   temperature: number;
@@ -32,7 +32,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(
     private langService: LanguageService,
     private http: HttpClient,
-    private cvModalService: CvModalService
+    private cvModalService: CvModalService,
+    private translate: TranslateService
   ) {
     this.currentLang = this.langService.getCurrentLang();
   }
@@ -60,11 +61,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private updateDateTime(): void {
     const now = new Date();
     
-    const days = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
-    const months = [
-      'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
-      'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'
-    ];
+    const days = this.translate.instant('date.days');
+    const months = this.translate.instant('date.months');
 
     const dayName = days[now.getDay()];
     const day = now.getDate();
@@ -130,5 +128,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.langService.use(lang);
     this.currentLang = lang;
     this.langMenuActive = false;
+    this.updateDateTime(); // Mettre à jour la date avec la nouvelle langue
   }
 }
+  
