@@ -1,8 +1,9 @@
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-certification',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './certification.component.html',
   styleUrl: './certification.component.css'
 })

@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CvModalService } from '../../services/cv-modal.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-apropos',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './apropos.component.html',
   styleUrl: './apropos.component.css'
 })

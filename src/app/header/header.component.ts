@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CvModalService } from '../services/cv-modal.service';
 import { LanguageService } from '../services/serviceLang/language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface WeatherData {
   temperature: number;
@@ -11,7 +12,7 @@ interface WeatherData {
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
