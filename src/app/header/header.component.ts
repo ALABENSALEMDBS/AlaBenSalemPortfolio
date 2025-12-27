@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CvModalService } from '../services/cv-modal.service';
+import { LanguageService } from '../services/serviceLang/language.service';
 
 interface WeatherData {
   temperature: number;
@@ -17,16 +18,24 @@ interface WeatherData {
 export class HeaderComponent implements OnInit, OnDestroy {
   menuActive = false;
   langMenuActive = false;
-  currentLang = 'fr';
+  currentLang: string;
+  // currentLang = 'fr';
   currentDate = '';
   currentTime = '';
   weather: WeatherData | null = null;
   private timeInterval: any;
 
+
+
+
   constructor(
+    private langService: LanguageService,
     private http: HttpClient,
     private cvModalService: CvModalService
-  ) {}
+  ) {
+    this.currentLang = this.langService.getCurrentLang();
+  }
+
 
   ngOnInit(): void {
     this.updateDateTime();
@@ -117,10 +126,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   switchLanguage(lang: string): void {
+    this.langService.use(lang);
     this.currentLang = lang;
     this.langMenuActive = false;
-    // Ici vous pouvez ajouter la logique pour changer la langue de l'application
-    console.log('Langue changée vers:', lang);
-    // Exemple: this.translateService.use(lang);
   }
 }
