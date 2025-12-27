@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CvModalService } from '../../services/cv-modal.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-apropos',
@@ -20,7 +20,8 @@ export class AproposComponent implements OnInit, OnDestroy {
   constructor(
     private sanitizer: DomSanitizer, 
     private elementRef: ElementRef,
-    private cvModalService: CvModalService
+    private cvModalService: CvModalService,
+      private translate: TranslateService
   ) {
     this.cvUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.cvPath);
     this.checkIfMobile();
@@ -73,6 +74,27 @@ export class AproposComponent implements OnInit, OnDestroy {
 
   openCvModal() {
     this.cvModalService.openCvModal();
+
+      // Vérifie support navigateur
+  if (!('speechSynthesis' in window)) return;
+
+  // Stop lecture précédente
+  window.speechSynthesis.cancel();
+
+  // Récupère le texte traduit
+  this.translate.get('about.Voir-mon-CV').subscribe(text => {
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    // Langue automatique
+    utterance.lang =
+      this.translate.currentLang === 'fr' ? 'fr-FR' : 'en-US';
+
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    utterance.volume = 0.5;
+
+    window.speechSynthesis.speak(utterance);
+  });
   }
 
   closeCvModal() {

@@ -118,6 +118,27 @@ export class HeaderComponent implements OnInit, OnDestroy {
   openCvModal(): void {
     this.cvModalService.openCvModal();
     this.closeMenu();
+
+      // Vérifie support navigateur
+  if (!('speechSynthesis' in window)) return;
+
+  // Stop lecture précédente
+  window.speechSynthesis.cancel();
+
+  // Récupère le texte traduit
+  this.translate.get('about.Voir-mon-CV').subscribe(text => {
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    // Langue automatique
+    utterance.lang =
+      this.translate.currentLang === 'fr' ? 'fr-FR' : 'en-US';
+
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    utterance.volume = 0.5;
+
+    window.speechSynthesis.speak(utterance);
+  });
   }
 
   toggleLangMenu(): void {
