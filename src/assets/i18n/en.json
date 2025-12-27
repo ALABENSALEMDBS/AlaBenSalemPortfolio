@@ -1,0 +1,73 @@
+{
+    "header": {
+    "cv": "View my CV",
+    "projects": "My Projects",
+    "contact": "Contact me",
+    "languageLabel": "Change language"
+    },
+
+    "hero": {
+    "projetsRealises": "Completed Projects",
+    "technologies": "Technologies",
+    "engagement": "Commitment",
+    "experience": "Experience",
+    "subtitle": "Software Engineer",
+    "scroll": "Scroll Down"
+    },
+
+    "about": {
+    "title": "About",
+    "introText": "Let me introduce myself here",
+    "cardText": "Full Stack Developer",
+    "motivationText1": "Passionate about technological innovation and software development, I transform complex ideas into intuitive and high-performing applications. Specialized in full-stack development, I design modern user experiences that combine elegance, efficiency, and technical robustness.",
+    "motivationText2": "Every project is an opportunity for me to innovate, learn, and create impactful solutions.",
+    "Voir-mes-projets": "View My Projects",
+    "Voir-mon-CV": "View My Resume",
+    "Mon-CV": "My Resume",
+    "Telecharger": "Download Resume",
+    "notePhone1": "PDFs cannot be displayed directly on mobile.",
+    "notePhone2": "Click the button below to download the resume."
+    },
+
+    "skills": {
+    "title": "My Skills",
+    "description": "Technologies and tools I master to create innovative solutions"
+    },
+
+    "projects": {
+    "title": "From Concept to Deployment – See the Process",
+    "Voir-mes-projets": "View My Projects"
+    },
+
+    "certifications": {
+    "title": "My Certifications",
+    "description": "Professional certifications validating my technical skills",
+    "verifier": "Verify"
+    },
+
+  "contact": {
+    "title": "Contact",
+    "description": "Contact me to discuss your projects"
+  },
+
+    "footer": {
+    "description1": "Software engineer passionate about application development",
+    "description2": "innovative solutions and creating modern technological tools.",
+    "mes-projects": "My Projects",
+    "a-propos": "About",
+    "contact": "Contact",
+    "rights": "2025 All rights reserved | Ben Salem Ala | Made with ❤️"
+    },
+
+    "weather": {
+    "location": "Tunis"
+    },
+
+  "date": {
+    "days": ["Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."],
+    "months": [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ]
+  }
+}

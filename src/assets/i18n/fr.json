@@ -1,0 +1,73 @@
+{
+    "header": {
+    "cv": "Voir mon CV",
+    "projects": "Mes Projets",
+    "contact": "Contactez-moi",
+    "languageLabel": "Changer de langue"
+    },
+
+    "hero": {
+    "projetsRealises":"Projets Réalisés",
+    "technologies":"Technologies",
+    "engagement":"Engagement",
+    "experience":"Expérience",
+    "subtitle": "Ingénieur en génie logiciel",
+    "scroll":"Descendez"
+    },
+
+    "about": {
+    "title": "À Propos",
+    "introText":"Je vais me présenter à vous ici",
+    "cardText":"Développeur Full Stack",
+    "motivationText1": "Passionné par l’innovation technologique et le développement logiciel, je transforme des idées complexes en applications intuitives et performantes. Spécialisé en développement full-stack, je conçois des expériences utilisateur modernes alliant élégance, efficacité et robustesse technique.",
+    "motivationText2": "Chaque projet est pour moi une occasion d’innover, d’apprendre et de créer des solutions à fort impact.",
+    "Voir-mes-projets": "Voir mes projets",
+    "Voir-mon-CV": "Voir mon CV",
+    "Mon-CV": "Mon CV",
+    "Telecharger": "Télécharger le CV",
+    "notePhone1": "Les PDFs ne peuvent pas être affichés directement sur mobile.",
+    "notePhone2": "Cliquez sur le bouton ci-dessous pour télécharger le CV."
+    },
+
+    "skills": {
+    "title": "Mes Compétences",
+    "description": "Technologies et outils que je maîtrise pour créer des solutions innovantes"
+    },
+
+    "projects": {
+    "title": "Du concept au déploiement voir le processus",
+    "Voir-mes-projets": "Voir mes projets"
+    },
+
+    "certifications": {
+    "title": "Mes Certifications",
+    "description": "Certifications professionnelles validant mes compétences techniques",
+    "verifier": "Vérifier"
+    },
+
+  "contact": {
+    "title": "Contact",
+    "description": "Contactez-moi pour discuter de vos projets"
+  },
+
+    "footer": {
+    "description1": "Ingénieur logiciel passionné par le développement d'applications",
+    "description2": "innovantes et la création de solutions technologiques modernes.",
+    "mes-projects": "Mes Projets",
+    "a-propos": "À Propos",
+    "contact": "Contact",
+    "rights": "2025 Tous droits réservés | Ben Salem Ala | Conçu avec ❤️"
+    },
+
+    "weather": {
+    "location": "Tunis"
+    },
+
+  "date": {
+    "days": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+    "months": [
+      "janvier", "février", "mars", "avril", "mai", "juin",
+      "juillet", "août", "septembre", "octobre", "novembre", "décembre"
+    ]
+  }
+}
