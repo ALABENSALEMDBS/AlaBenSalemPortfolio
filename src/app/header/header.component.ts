@@ -16,6 +16,7 @@ interface WeatherData {
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   menuActive = false;
+  langMenuActive = false;
   currentLang = 'fr';
   currentDate = '';
   currentTime = '';
@@ -111,8 +112,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.closeMenu();
   }
 
+  toggleLangMenu(): void {
+    this.langMenuActive = !this.langMenuActive;
+  }
+
   switchLanguage(lang: string): void {
     this.currentLang = lang;
+    this.langMenuActive = false;
     // Ici vous pouvez ajouter la logique pour changer la langue de l'application
     console.log('Langue changée vers:', lang);
     // Exemple: this.translateService.use(lang);
