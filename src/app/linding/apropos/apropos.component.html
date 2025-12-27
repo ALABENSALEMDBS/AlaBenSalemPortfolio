@@ -1,8 +1,8 @@
 <section class="about-section" id="aboutapropos">
   <div class="container">
     <div class="about-header">
-      <h2 class="section-title">À Propos</h2>
-      <p class="intro-text">Je vais me présenter à vous ici</p>
+      <h2 class="section-title">{{ 'about.title' | translate }}</h2>
+      <p class="intro-text">{{ 'about.introText' | translate }}</p>
     </div>
 
     <div class="about-content">
@@ -15,7 +15,7 @@
           <span class="card-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z"/><path fill="#F3F7FF" d="M13.232 1.36c.632-.758 1.863-.24 1.763.742L14.289 9H20a1 1 0 0 1 .768 1.64l-10 12c-.632.758-1.863.24-1.763-.742L9.711 15H4a1 1 0 0 1-.768-1.64z"/></g></svg>
           </span>
-          <p class="card-text">Développeur Full Stack</p>
+          <p class="card-text">{{ 'about.cardText' | translate }}</p>
         </div>
       </div>
 
@@ -23,18 +23,18 @@
 
 
         <p class="motivation-text">
-         <span class="name">Ben Salem Ala</span><br>          
-         Passionné par l’innovation technologique et le développement logiciel, je transforme des idées complexes en applications intuitives et performantes. Spécialisé en développement full-stack, je conçois des expériences utilisateur modernes alliant élégance, efficacité et robustesse technique.
+         <span class="name">Ben Salem Ala</span><br>
+          {{ 'about.motivationText1' | translate }}
         </p>
 
         <p class="motivation-text">
-          Chaque projet est pour moi une occasion d’innover, d’apprendre et de créer des solutions à fort impact.
+          {{ 'about.motivationText2' | translate }}
         </p>
 
         <div class="cta-buttons">
           <div class="buttons-group">
             <button  class="btn project-button">
-              <span>Voir mes projets</span>
+              <span>{{ 'about.Voir-mes-projets' | translate }}</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
@@ -44,7 +44,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z"/><path fill="#09244B" d="M12 2v6.5a1.5 1.5 0 0 0 1.5 1.5H20v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm-.989 9.848a6.222 6.222 0 0 1-2.235 3.872c-.887.716-.076 2.121.988 1.712a6.223 6.223 0 0 1 4.471 0c1.064.41 1.875-.995.988-1.712a6.223 6.223 0 0 1-2.235-3.872c-.177-1.126-1.8-1.127-1.977 0M12 14.303l.806 1.394h-1.61zm2-12.26a2 2 0 0 1 1 .543L19.414 7a2 2 0 0 1 .543 1H14z"/></g></svg>
             </a> -->
             <button (click)="openCvModal()" class="btn cv-button">
-            <span>Voir mon CV</span>
+            <span>{{ 'about.Voir-mon-CV' | translate }}</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z"/><path fill="#C0D0F5" d="M12 2v6.5a1.5 1.5 0 0 0 1.5 1.5H20v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm-.989 9.848a6.222 6.222 0 0 1-2.235 3.872c-.887.716-.076 2.121.988 1.712a6.223 6.223 0 0 1 4.471 0c1.064.41 1.875-.995.988-1.712a6.223 6.223 0 0 1-2.235-3.872c-.177-1.126-1.8-1.127-1.977 0M12 14.303l.806 1.394h-1.61zm2-12.26a2 2 0 0 1 1 .543L19.414 7a2 2 0 0 1 .543 1H14z"/></g></svg>          
           </button>
           </div>
@@ -84,14 +84,14 @@
         </svg>
       </button>
       <div class="modal-header">
-        <h3>Mon CV</h3>
+        <h3>{{ 'about.Mon-CV' | translate }}</h3>
         <a [href]="cvPath" download="CV_Alaa_Ben_Salem.pdf" class="download-button">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          Télécharger le CV
+          {{ 'about.Telecharger' | translate }}
         </a>
       </div>
       <div class="pdf-viewer">
@@ -107,15 +107,15 @@
             </svg>
           </div>
           <h4>CV - Alaa Ben Salem</h4>
-          <p>Les PDFs ne peuvent pas être affichés directement sur mobile.</p>
-          <p>Cliquez sur le bouton ci-dessous pour télécharger le CV.</p>
+          <p>{{ 'about.notePhone1' | translate }}</p>
+          <p>{{ 'about.notePhone2' | translate }}</p>
           <a [href]="cvPath" download="CV_Alaa_Ben_Salem.pdf" class="mobile-download-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            Télécharger le CV
+            {{ 'about.Telecharger' | translate }}
           </a>
         </div>
       </div>
