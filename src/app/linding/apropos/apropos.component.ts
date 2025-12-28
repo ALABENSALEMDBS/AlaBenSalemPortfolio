@@ -3,10 +3,11 @@ import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CvModalService } from '../../services/cv-modal.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-apropos',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './apropos.component.html',
   styleUrl: './apropos.component.css'
 })
