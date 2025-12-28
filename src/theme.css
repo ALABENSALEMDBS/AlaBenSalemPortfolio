@@ -17,7 +17,7 @@ body.dark-theme {
   }
 
   /* Override secondary text colors */
-  .motivation-text,
+  /* .motivation-text, */
   /* .section-description, */
   .cert-date {
     color: var(--text-secondary) !important;
