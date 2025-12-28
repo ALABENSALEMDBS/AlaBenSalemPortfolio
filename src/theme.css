@@ -90,7 +90,7 @@ body.dark-theme .controls-separator {
 }
 
 body.dark-theme .lang-dropdown {
-  background: var(--bg-secondary);
+  background: var(--text-light);
   border-color: var(--text-primary);
 }
 
