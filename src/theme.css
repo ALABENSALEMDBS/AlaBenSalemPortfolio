@@ -16,9 +16,6 @@ body.dark-theme {
     color: var(--text-primary) !important;
   }
 
-  /* Override secondary text colors */
-  .motivation-text,
-  /* .section-description, */
   .cert-date {
     color: var(--text-secondary) !important;
   }
@@ -51,10 +48,6 @@ body.dark-theme {
     color: var(--text-primary) !important;
   }
 
-  /* Footer */
-  /* .footer {
-    background: var(--text-primary) !important;
-  } */
 
   /* Specific elements */
   .card-text,
@@ -104,10 +97,7 @@ body.dark-theme .hamburger .bar {
   background-color: var(--text-primary);
 }
 
-/* Projet Section - Keep dark */
-/* body.dark-theme .projet-section {
-  background: var(--bg-dark) !important;
-} */
+
 
 /* Certification Section */
 body.dark-theme .certifications-section {
@@ -128,17 +118,6 @@ body.dark-theme .cert-date {
   color: var(--text-secondary) !important;
 }
 
-/* Footer */
-/* body.dark-theme .footer {
-  background: var(--bg-secondary) !important;
-  border-top: 1px solid var(--border-color);
-} */
-
-/* body.dark-theme .footer-content h3,
-body.dark-theme .footer-content p,
-body.dark-theme .footer-link {
-  color: var(--text-primary) !important;
-} */
 
 body.dark-theme .social-icon {
   background: var(--accent-secondary) !important;
@@ -163,13 +142,11 @@ body.dark-theme .download-button {
   color: var(--accent-primary) !important;
 }
 
-body.dark-theme .mobile-pdf-message h4 {
-  color: var(--text-primary) !important;
-}
 
-body.dark-theme .mobile-pdf-message p {
+
+/* body.dark-theme .mobile-pdf-message p {
   color: var(--text-secondary) !important;
-}
+} */
 
 /* Custom Cursor */
 body.dark-theme .custom-cursor {
