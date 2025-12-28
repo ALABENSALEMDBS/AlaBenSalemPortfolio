@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CvModalService } from '../services/cv-modal.service';
 import { LanguageService } from '../services/serviceLang/language.service';
@@ -13,7 +14,7 @@ interface WeatherData {
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
