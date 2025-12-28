@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { LanguageService } from './services/serviceLang/language.service';
+import { ThemeService } from './services/theme.service';
 
 
 @Component({
@@ -12,11 +13,17 @@ import { LanguageService } from './services/serviceLang/language.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private langService: LanguageService) {}
+  constructor(
+    private langService: LanguageService,
+    private themeService: ThemeService
+  ) {}
 
   title = 'AlaBenSalemPortfolio';
 
   ngOnInit(): void {
+    // Initialiser le thème dès le démarrage
+    // Le service s'occupe automatiquement de charger le thème sauvegardé
+    
     // Attendre que le DOM soit complètement chargé
     setTimeout(() => {
       this.initCustomCursor();

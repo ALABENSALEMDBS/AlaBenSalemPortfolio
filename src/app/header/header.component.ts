@@ -4,6 +4,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CvModalService } from '../services/cv-modal.service';
 import { LanguageService } from '../services/serviceLang/language.service';
+import { ThemeService } from '../services/theme.service';
 
 interface WeatherData {
   temperature: number;
@@ -33,7 +34,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
     private langService: LanguageService,
     private http: HttpClient,
     private cvModalService: CvModalService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    public themeService: ThemeService
   ) {
     this.currentLang = this.langService.getCurrentLang();
   }
@@ -150,6 +152,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.currentLang = lang;
     this.langMenuActive = false;
     this.updateDateTime(); // Mettre à jour la date avec la nouvelle langue
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
   }
 }
   

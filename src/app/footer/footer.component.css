@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1E1E1E;
-  color: white;
+  background-color:  #1E1E1E;
+  color: var(--text-light, white);
   padding: 3rem 0 0 0;
   margin-top: auto;
 }
@@ -120,7 +120,7 @@
 
 /* Footer Bottom - Contact Info */
 .footer-bottom {
-  background-color: #1E1E1E;
+  background-color:  #1E1E1E;
   /* width: 100%; */
   padding: 1.5rem 5%;
   display: flex;
