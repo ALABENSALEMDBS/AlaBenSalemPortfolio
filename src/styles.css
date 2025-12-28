@@ -33,6 +33,7 @@ body.light-theme {
   --shadow-color: rgba(0, 0, 0, 0.1);
   --hover-bg: #e8f0fe;
   --text-gris:#4a5568;
+  --cvala:#122960;
 }
 
 /* Dark Theme */
@@ -50,6 +51,8 @@ body.dark-theme {
   --shadow-color: rgba(0, 0, 0, 0.5);
   --hover-bg: #122960;
   --text-gris:#F3F7FF;
+  --cvala:#F3F7FF;
+
 
 }
 

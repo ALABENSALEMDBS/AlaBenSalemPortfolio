@@ -389,13 +389,13 @@
 
 .mobile-pdf-message h4 {
   font-size: 1.5rem;
-  color: #122960;
+  color: var(--cvala, #122960);
   margin-bottom: 15px;
   font-weight: 600;
 }
 
 .mobile-pdf-message p {
-  /* color: #718096; */
+  color: var(--text-gris, #4a5568);
   font-size: 1rem;
   margin-bottom: 10px;
   line-height: 1.6;
