@@ -11,7 +11,7 @@ body.dark-theme {
   .intro-text,
   .name,
   .skill-name,
-  .cert-title,
+  /* .cert-title, */
   .cert-org {
     color: var(--text-primary) !important;
   }
@@ -109,7 +109,7 @@ body.dark-theme .cert-card {
   border-color: var(--border-color) !important;
 }
 
-body.dark-theme .cert-title,
+/* body.dark-theme .cert-title, */
 body.dark-theme .cert-org {
   color: var(--text-primary) !important;
 }
