@@ -29,7 +29,7 @@ color: var(--text-primary, #F3F7FF);
 
 .section-description {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--text-gris, #4a5568);
   font-family: 'Ropan', sans-serif;
   max-width: 600px;
   margin: 0 auto;

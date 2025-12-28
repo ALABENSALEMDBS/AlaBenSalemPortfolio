@@ -18,7 +18,7 @@ body.dark-theme {
 
   /* Override secondary text colors */
   .motivation-text,
-  .section-description,
+  /* .section-description, */
   .cert-date {
     color: var(--text-secondary) !important;
   }
@@ -52,9 +52,9 @@ body.dark-theme {
   }
 
   /* Footer */
-  .footer {
+  /* .footer {
     background: var(--text-primary) !important;
-  }
+  } */
 
   /* Specific elements */
   .card-text,
@@ -105,9 +105,9 @@ body.dark-theme .hamburger .bar {
 }
 
 /* Projet Section - Keep dark */
-body.dark-theme .projet-section {
+/* body.dark-theme .projet-section {
   background: var(--bg-dark) !important;
-}
+} */
 
 /* Certification Section */
 body.dark-theme .certifications-section {
@@ -129,16 +129,16 @@ body.dark-theme .cert-date {
 }
 
 /* Footer */
-body.dark-theme .footer {
+/* body.dark-theme .footer {
   background: var(--bg-secondary) !important;
   border-top: 1px solid var(--border-color);
-}
+} */
 
-body.dark-theme .footer-content h3,
+/* body.dark-theme .footer-content h3,
 body.dark-theme .footer-content p,
 body.dark-theme .footer-link {
   color: var(--text-primary) !important;
-}
+} */
 
 body.dark-theme .social-icon {
   background: var(--accent-secondary) !important;
