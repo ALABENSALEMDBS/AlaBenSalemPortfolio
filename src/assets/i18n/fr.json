@@ -1,6 +1,6 @@
 {
     "header": {
-    "cv": "Voir mon CV",
+    "cv": "Voir mon C V",
     "projects": "Mes Projets",
     "contact": "Contactez-moi",
     "languageLabel": "Changer de langue"
@@ -22,7 +22,7 @@
     "motivationText1": "Passionné par l’innovation technologique et le développement logiciel, je transforme des idées complexes en applications intuitives et performantes. Spécialisé en développement full-stack, je conçois des expériences utilisateur modernes alliant élégance, efficacité et robustesse technique.",
     "motivationText2": "Chaque projet est pour moi une occasion d’innover, d’apprendre et de créer des solutions à fort impact.",
     "Voir-mes-projets": "Voir mes projets",
-    "Voir-mon-CV": "Voir mon CV",
+    "Voir-mon-CV": "Voir mon C V",
     "Mon-CV": "Mon CV",
     "Telecharger": "Télécharger le CV",
     "notePhone1": "Les PDFs ne peuvent pas être affichés directement sur mobile.",
