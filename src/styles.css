@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -14,6 +15,50 @@ body {
 
 router-outlet {
   flex: 1; /* occupe tout l'espace disponible au dessus du footer */
+}
+
+/* ===== THEME COLORS ===== */
+/* Light Theme (Default) */
+body.light-theme {
+  --bg-primary: #F3F7FF;
+  --bg-secondary: #FFFFFF;
+  --bg-dark: #122960;
+  --text-primary: #1E1E1E;
+  --text-secondary: #F3F7FF;
+  --text-light: #F3F7FF;
+  --accent-primary: #122960;
+  --accent-secondary: #C0D0F5;
+  --accent-tertiary: #56EF9F;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-bg: #e8f0fe;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --bg-primary: #0a0e27;
+  --bg-secondary: #1a1f3a;
+  --bg-dark: #050810;
+  --text-primary: #F3F7FF;
+  --text-secondary: #1E1E1E;
+  --text-light: #F3F7FF;
+  --accent-primary: #4d7bff;
+  --accent-secondary: #2a3f6a;
+  --accent-tertiary: #56EF9F;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --hover-bg: #122960;
+}
+
+/* Apply theme colors */
+body.dark-theme {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.light-theme {
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 

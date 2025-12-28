@@ -1,0 +1,193 @@
+/* ===== THEME STYLES FOR COMPONENTS ===== */
+
+/* Global Color Overrides */
+body.dark-theme {
+  /* Override all text colors */
+  .stat-number,
+  .stat-label,
+  .hero-title,
+  .hero-subtitle,
+  .section-title,
+  .intro-text,
+  .name,
+  .skill-name,
+  .cert-title,
+  .cert-org {
+    color: var(--text-primary) !important;
+  }
+
+  /* Override secondary text colors */
+  .motivation-text,
+  .section-description,
+  .cert-date {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Override backgrounds */
+  .header,
+  .hero-section,
+  .about-section,
+  .skills-section,
+  .certifications-section {
+    background: var(--bg-primary) !important;
+  }
+
+  /* Cards and containers */
+  .floating-card,
+  .skill-card,
+  .cert-card,
+  .datetime-wrapper {
+    background: var(--bg-secondary) !important;
+  }
+
+  /* Buttons */
+  .cv-button {
+    background: var(--accent-primary) !important;
+    color: var(--text-light) !important;
+  }
+
+  .project-button {
+    background: var(--accent-secondary) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--text-primary) !important;
+  }
+
+  /* Specific elements */
+  .card-text,
+  .weather-temp,
+  .time-text {
+    color: var(--text-primary) !important;
+  }
+}
+
+/* Header */
+body.dark-theme .header {
+  background: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-theme .logo-img {
+  filter: brightness(0) invert(1);
+}
+
+body.dark-theme .theme-toggle-btn,
+body.dark-theme .lang-icon-btn {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+body.dark-theme .theme-toggle-btn:hover {
+  background: var(--text-primary);
+  color: var(--bg-secondary);
+}
+
+body.dark-theme .controls-separator {
+  color: var(--text-primary);
+}
+
+body.dark-theme .lang-dropdown {
+  background: var(--bg-secondary);
+  border-color: var(--text-primary);
+}
+
+body.dark-theme .lang-btn {
+  background: var(--bg-secondary);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+body.dark-theme .hamburger .bar {
+  background-color: var(--text-primary);
+}
+
+/* Projet Section - Keep dark */
+body.dark-theme .projet-section {
+  background: var(--bg-dark) !important;
+}
+
+/* Certification Section */
+body.dark-theme .certifications-section {
+  background: var(--bg-primary) !important;
+}
+
+body.dark-theme .cert-card {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+body.dark-theme .cert-title,
+body.dark-theme .cert-org {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .cert-date {
+  color: var(--text-secondary) !important;
+}
+
+/* Footer */
+body.dark-theme .footer {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color);
+}
+
+body.dark-theme .footer-content h3,
+body.dark-theme .footer-content p,
+body.dark-theme .footer-link {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .social-icon {
+  background: var(--accent-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .social-icon:hover {
+  background: var(--accent-primary) !important;
+}
+
+/* Modal */
+body.dark-theme .modal-content {
+  background: var(--bg-secondary) !important;
+}
+
+body.dark-theme .modal-header {
+  background: var(--accent-primary) !important;
+}
+
+body.dark-theme .download-button {
+  background: var(--text-light) !important;
+  color: var(--accent-primary) !important;
+}
+
+body.dark-theme .mobile-pdf-message h4 {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .mobile-pdf-message p {
+  color: var(--text-secondary) !important;
+}
+
+/* Custom Cursor */
+body.dark-theme .custom-cursor {
+  background: var(--accent-tertiary) !important;
+}
+
+body.dark-theme .cursor-follower {
+  border-color: var(--accent-tertiary) !important;
+}
+
+/* Mobile Menu */
+body.dark-theme .mobile-menu-btn {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body.dark-theme .mobile-menu-btn:hover {
+  background: var(--accent-primary) !important;
+  color: var(--text-light) !important;
+}
