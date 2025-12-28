@@ -171,7 +171,8 @@
 .motivation-text {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #4a5568;
+  color: var(--text-primary, #1E1E1E);
+  
   font-family: 'Ropan', sans-serif;
   margin-bottom: 20px;
   text-align: justify;
@@ -350,6 +351,7 @@
   flex: 1;
   padding: 20px;
   overflow: hidden;
+  background: var(--bg-primary, #F3F7FF);
 }
 
 .pdf-viewer iframe {
@@ -393,7 +395,7 @@
 }
 
 .mobile-pdf-message p {
-  color: #718096;
+  /* color: #718096; */
   font-size: 1rem;
   margin-bottom: 10px;
   line-height: 1.6;
