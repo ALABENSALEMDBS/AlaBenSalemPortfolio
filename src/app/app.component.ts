@@ -1,28 +1,47 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
+import { CvModalService } from './services/cv-modal.service';
 import { LanguageService } from './services/serviceLang/language.service';
 import { ThemeService } from './services/theme.service';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, CommonModule, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  isCvModalOpen = false;
+  cvPath = '/images/CV_Alaa_Ben_Salem_en.pdf';
+  cvUrl: SafeResourceUrl;
+  isMobile = false;
+
   constructor(
     private langService: LanguageService,
-    private themeService: ThemeService
-  ) {}
+    private themeService: ThemeService,
+    private cvModalService: CvModalService,
+    private sanitizer: DomSanitizer
+  ) {
+    this.cvUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.cvPath);
+    this.checkIfMobile();
+  }
 
   title = 'AlaBenSalemPortfolio';
 
   ngOnInit(): void {
     // Initialiser le thème dès le démarrage
     // Le service s'occupe automatiquement de charger le thème sauvegardé
+    
+    // S'abonner au service pour ouvrir/fermer la modal
+    this.cvModalService.cvModalState$.subscribe(state => {
+      this.isCvModalOpen = state;
+    });
     
     // Attendre que le DOM soit complètement chargé
     setTimeout(() => {
@@ -103,6 +122,14 @@ export class AppComponent implements OnInit {
         cursorFollower.classList.remove('hover');
       });
     });
+  }
+
+  checkIfMobile() {
+    this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  closeCvModal() {
+    this.cvModalService.closeCvModal();
   }
 
 }

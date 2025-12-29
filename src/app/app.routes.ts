@@ -5,4 +5,5 @@ export const routes: Routes = [
       {path:'', redirectTo:'home',pathMatch:'full'},//path initial par defaut
     {path:'home', component:HomeComponent} ,
     {path:'projects', loadComponent:() => import('./allprojects/projectspage/projectspage.component').then(m => m.ProjectspageComponent)},
+    {path:'contact', loadComponent:() => import('./contact/contactforum/contactforum.component').then(m => m.ContactforumComponent)},
   ];
