@@ -69,5 +69,24 @@
       "janvier", "février", "mars", "avril", "mai", "juin",
       "juillet", "août", "septembre", "octobre", "novembre", "décembre"
     ]
-  }
+  },
+
+   "parcoursAcademic": {
+    "title": "Parcours Académique",
+    "subtitle": "Mon chemin vers l'excellence technique",
+    "diplomeIngenieur": "Diplôme d'Ingénierie",
+    "yearIngenieur": "2023 - Aujourd'hui",
+    "institutionIngenieur": "ESPRIT - École Supérieure Privée d'Ingénierie et de Technologies",
+    "descriptionIngenieur": "Formation en génie logiciel et technologies de l'information avec une spécialisation en développement d'applications et systèmes informatiques.",
+
+    "diplomeTechnicien": "Technicien Supérieur",
+    "yearTechnicien": "2020 - 2023",
+    "institutionTechnicien": "ISET Nabeul - Institut Supérieur des Études Technologiques de Nabeul",
+    "descriptionTechnicien": "Automatisme et Informatique Industrielle. Formation technique spécialisée dans l'automatisation des systèmes industriels et le contrôle des processus.",
+
+    "diplomeBaccalaureat": "Baccalauréat Technique",
+    "yearBaccalaureat": "2020",
+    "institutionBaccalaureat": "Lycée Technique Mahmoud El Mesaadi de Nabeul",
+    "descriptionBaccalaureat": "Formation secondaire technique avec une base solide en mathématiques, sciences physiques et technologies de l'information."
+    }
 }

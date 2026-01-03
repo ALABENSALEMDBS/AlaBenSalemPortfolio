@@ -69,5 +69,25 @@
       "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
     ]
-  }
+  },
+
+  "parcoursAcademic": {
+    "title": "Academic Journey",
+    "subtitle": "My path toward technical excellence",
+
+    "diplomeIngenieur": "Engineering Degree",
+    "yearIngenieur": "2023 - Present",
+    "institutionIngenieur": "ESPRIT – Private Higher School of Engineering and Technology",
+    "descriptionIngenieur": "Education in software engineering and information technologies, with a specialization in application development and computer systems.",
+
+    "diplomeTechnicien": "Higher Technician Diploma",
+    "yearTechnicien": "2020 - 2023",
+    "institutionTechnicien": "ISET Nabeul – Higher Institute of Technological Studies of Nabeul",
+    "descriptionTechnicien": "Automation and Industrial Computing. Technical training focused on industrial systems automation and process control.",
+
+    "diplomeBaccalaureat": "Technical Baccalaureate",
+    "yearBaccalaureat": "2020",
+    "institutionBaccalaureat": "Mahmoud El Mesaadi Technical Secondary School of Nabeul",
+    "descriptionBaccalaureat": "Technical secondary education with a strong foundation in mathematics, physical sciences, and information technologies."
+    }
 }

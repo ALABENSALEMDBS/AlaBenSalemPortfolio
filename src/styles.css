@@ -34,6 +34,7 @@ body.light-theme {
   --hover-bg: #e8f0fe;
   --text-gris:#4a5568;
   --cvala:#122960;
+  --study-bg: #122960;
 }
 
 /* Dark Theme */
@@ -52,7 +53,7 @@ body.dark-theme {
   --hover-bg: #122960;
   --text-gris:#F3F7FF;
   --cvala:#F3F7FF;
-
+  --study-bg: rgba(255, 255, 255, 0.05);
 
 }
 
