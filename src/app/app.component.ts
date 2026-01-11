@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   cvPath = '/images/CV_Alaa_Ben_Salem_en.pdf';
   cvUrl: SafeResourceUrl;
   isMobile = false;
+  showScrollButton = false;
 
   constructor(
     private langService: LanguageService,
@@ -47,6 +48,9 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.initCustomCursor();
     }, 100);
+
+    // Écouter le scroll pour afficher/masquer le bouton retour en haut
+    window.addEventListener('scroll', () => this.checkScrollPosition());
   }
 
   // Initialisation du curseur personnalisé
@@ -130,6 +134,19 @@ export class AppComponent implements OnInit {
 
   closeCvModal() {
     this.cvModalService.closeCvModal();
+  }
+
+  // Vérifie la position de scroll pour afficher/masquer le bouton
+  checkScrollPosition() {
+    this.showScrollButton = window.pageYOffset > 300;
+  }
+
+  // Retour en haut de la page avec animation smooth
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
 }

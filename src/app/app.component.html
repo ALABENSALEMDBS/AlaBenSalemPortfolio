@@ -5,6 +5,15 @@
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 
+<!-- Bouton Retour en Haut -->
+<button class="scroll-to-top" [class.visible]="showScrollButton" (click)="scrollToTop()" title="Retour en haut">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+
+
 <!-- Modal CV Global -->
 <div class="cv-modal" [class.active]="isCvModalOpen" (click)="closeCvModal()">
   <div class="modal-content" (click)="$event.stopPropagation()">
