@@ -1,39 +1,101 @@
-<div class="coming-soon-container">
-  <div class="coming-soon-content">
-    <div class="icon-wrapper">
-      <svg class="rocket-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
-        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
-        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-      </svg>
-    </div>
-    
-    <h1 class="main-title">Coming Soon</h1>
-    <h2 class="sub-title">Bientôt Disponible</h2>
-    
-    <p class="description">
-      Cette page est en cours de développement.<br>
-      De superbes projets arrivent très prochainement !
-    </p>
-    
-    <div class="dots-container">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    
-    <button class="back-button" routerLink="/home">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<section class="projects-page">
+  <div class="container">
+    <!-- Back to Home Button -->
+    <a routerLink="/" class="back-to-home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M19 12H5M12 19l-7-7 7-7"/>
       </svg>
-      Retour à l'accueil
-    </button>
+      <span>Retour à l'accueil</span>
+    </a>
+
+    <!-- Header Section -->
+    <div class="projects-header">
+      <h1 class="main-title">Mes Projets</h1>
+      <p class="intro-text">
+        J'ai travaillé sur des projets backend, frontend, DevOps et full stack, en intégrant la logique métier, les API, la gestion des bases de données et des interfaces utilisateurs modernes et responsives, me permettant de maîtriser l'ensemble du cycle de développement d'une application web.
+      </p>
+      <p class="highlight-phrase">
+        <span class="highlight-icon">💡</span>
+        Chaque projet est un nouvel apprentissage
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-section">
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'all'"
+        (click)="filterProjects('all')">
+        Tous les projets
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'front'"
+        (click)="filterProjects('front')">
+        Frontend
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'back'"
+        (click)="filterProjects('back')">
+        Backend
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'fullstack'"
+        (click)="filterProjects('fullstack')">
+        Full Stack
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'devops'"
+        (click)="filterProjects('devops')">
+        DevOps
+      </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects">
+        <div class="project-image-container">
+          <img [src]="project.image" [alt]="project.titre" class="project-image">
+          <div class="project-type-badge" [class]="project.type">
+            {{ project.type === 'front' ? 'Frontend' : 
+               project.type === 'back' ? 'Backend' : 
+               project.type === 'fullstack' ? 'Full Stack' : 'DevOps' }}
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <h3 class="project-title">{{ project.titre }}</h3>
+          <p class="project-description">{{ project.sujet }}</p>
+          
+          <div class="project-skills">
+            <h4 class="skills-title">💡 Compétences acquises</h4>
+            <p class="skills-text">{{ project.skillLearned }}</p>
+          </div>
+
+          <div class="project-footer">
+            <a 
+              *ngIf="project.lien" 
+              [href]="project.lien" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="project-link">
+              <span>Voir le projet</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+            <span *ngIf="!project.lien" class="no-link">Projet privé</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" *ngIf="filteredProjects.length === 0">
+      <p>Aucun projet trouvé pour ce filtre.</p>
+    </div>
   </div>
-  
-  <div class="background-animation">
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-    <div class="circle circle-3"></div>
-  </div>
-</div>
+</section>
