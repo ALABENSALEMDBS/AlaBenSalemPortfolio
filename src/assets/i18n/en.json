@@ -55,7 +55,7 @@
     "description2": "innovative solutions and creating modern technological tools.",
     "mes-projects": "My Projects",
     "a-propos": "About",
-    "contact": "Contact",
+    "contact": "Let’s Talk",
     "rights": "2025 All rights reserved | Ben Salem Ala | Made with ❤️"
     },
 
@@ -89,5 +89,128 @@
     "yearBaccalaureat": "2020",
     "institutionBaccalaureat": "Mahmoud El Mesaadi Technical Secondary School of Nabeul",
     "descriptionBaccalaureat": "Technical secondary education with a strong foundation in mathematics, physical sciences, and information technologies."
+    },
+
+
+  "allprojects": {
+    "back": "Back to Home",
+    "title": "My Projects",
+    "description": "I have worked on backend, frontend, DevOps, and full-stack projects, integrating business logic, APIs, database management, and modern, responsive user interfaces, allowing me to master the entire web application development cycle.",
+    "hook": "Each project is a new learning experience",
+    "Tous-les-projets": "All Projects",
+    "Backend": "Backend",
+    "Frontend": "Frontend",
+    "Full-Stack": "Full Stack",
+    "DevOps": "DevOps",
+
+
+    "Projects-List": [
+    {
+      "titre": "Angular Electronic Signature",
+      "sujet": "Development of the front-end of a mini web application using Angular. It allows users to create and customize an electronic signature quickly and easily.",
+      "skillLearned": "This project allowed me to learn how to use a local database server with Angular to test front-end logic. I used json-server (json-server --watch db.json) to simulate an API before integrating an external database system.",
+      "type": "front"
+    },
+    {
+      "titre": "CI/CD DevOps Pipeline",
+      "sujet": "Implementation of a DevOps CI/CD pipeline using Jenkins, GitHub, SonarQube, and Docker. Automation of build, testing, and deployment processes on Ubuntu WSL.",
+      "skillLearned": "This project helped me set up a complete DevOps CI/CD pipeline with automated testing and deployment.",
+      "type": "devops"
+    },
+    {
+      "titre": "Football Platform: Training, Tactics, and Analysis",
+      "sujet": "Full-stack Spring Boot & Angular project developed by a team of 5 members with active collaboration and role distribution. I developed the Tactics and Formations modules on both front-end and back-end sides.",
+      "skillLearned": "This project allowed me to gain experience in teamwork, integrate front-end with back-end, consume APIs, and develop an AI model for prediction.",
+      "type": "fullstack"
+    },
+    {
+      "titre": "Portfolio Website",
+      "sujet": "Front-end development of a portfolio website for a graphic designer by transforming Figma mockups into a functional interface. Implementation of a modern, responsive, and user-friendly design.",
+      "skillLearned": "This project allowed me to convert a Figma design into Angular components, integrate the EmailJS API for email sending, and deploy the website using GitHub and Netlify.",
+      "type": "front"
+    },
+    {
+      "titre": "Household Management Application",
+      "sujet": "Backend development of a household management application using Spring Boot. Integration of a MySQL database to manage users, resources, and daily operations.",
+      "skillLearned": "This project helped me learn SOA architecture, create and test APIs using Postman, and document them using Swagger.",
+      "type": "back"
+    },
+    {
+      "titre": "Library Management System (Symfony)",
+      "sujet": "Full-stack development of a library management web application using Symfony. Integration of a MySQL database to manage books, users, and loans.",
+      "skillLearned": "This project allowed me to understand and apply monolithic architecture, where front-end and back-end are integrated into a single web application.",
+      "type": "fullstack"
+    },
+    {
+      "titre": "Microservices Mini Project with Spring Boot",
+      "sujet": "Development of a microservices-based mini project using Spring Boot, including an API Gateway, Eureka service discovery, and a centralized configuration server. Secure authentication implemented with Keycloak.",
+      "skillLearned": "This project allowed me to design and develop a microservices architecture, implement an API Gateway and service discovery with Eureka, and secure the system using Keycloak.",
+      "type": "back"
+    },
+    {
+      "titre": "Improvement of Online Complaint Management – Tunisia Telecom",
+      "sujet": "Full-stack engineering internship project aimed at redesigning and improving the online complaint management system, covering both front-end and back-end. Implementation of enhanced features, UI optimization, and efficient data management.",
+      "skillLearned": "This project allowed me to use Spring Security to secure application endpoints and implement an email notification system for complaint tracking and management.",
+      "type": "fullstack"
     }
+  ],
+
+    "Competences-acquises": "Skills Acquired",
+    "Voir-le-projet": "View Project",
+    "Projet-prive": "Private Project",
+    "Aucun-projects-found": "No projects found for this filter."
+  },
+
+  "contactinfo": {
+  "title": "Contact Information",
+  "description": "Feel free to contact me through any of the following methods",
+  "Email": "Email",
+  "Telephone": "Phone",
+  "Localisation": "Location",
+  "Localisation-info": "Tunisia, Nabeul, Beni Khiar 8060, Diar Ben Salem 8078",
+  "Suivez-moi": "Follow me on social media"
+  },
+
+  "contactwhatsapp": {
+    "title": "Contact me via WhatsApp",
+    "description": "Fill out the form below and send me a message directly on WhatsApp",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "fullNameError": "Name must contain at least 3 characters",
+    "email": "Email",
+    "emailPlaceholder": "example@email.com",
+    "emailError": "Invalid email (e.g.: example@email.com)",
+    "phone": "Phone",
+    "phonePlaceholder": "+216 XX XXX XXX",
+    "phoneError": "Phone number must contain at least 8 digits",
+    "objectif": "Purpose",
+    "objectifPlaceholder": "Select a purpose",
+    "objectifError": "Please select a purpose",
+    "message": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "messageError": "Message must contain at least 10 characters",
+    "valid": "✓ Valid",
+    "required": "*",
+    "sendButton": "Send Message via WhatsApp",
+    "infoText": "By clicking the button, you will be redirected to WhatsApp with your pre-filled message.",
+    "caractere": "character",
+    "caracteres": "characters",
+    "whatsappLabels": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "objectif": "Purpose",
+      "message": "Message"
+    },
+    "objectifs": {
+      "consultation": "Consultation",
+      "collaboration": "Collaboration",
+      "projetWeb": "Web Project",
+      "projetMobile": "Mobile Project",
+      "formation": "Training",
+      "supportTechnique": "Technical Support",
+      "autre": "Other"
+    }
+  }
+
 }
