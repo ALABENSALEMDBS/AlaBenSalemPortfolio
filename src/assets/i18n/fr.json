@@ -55,7 +55,7 @@
     "description2": "innovantes et la création de solutions technologiques modernes.",
     "mes-projects": "Mes Projets",
     "a-propos": "À Propos",
-    "contact": "Contact",
+    "contact": "Parlons ensemble",
     "rights": "2025 Tous droits réservés | Ben Salem Ala | Conçu avec ❤️"
     },
 
@@ -88,5 +88,128 @@
     "yearBaccalaureat": "2020",
     "institutionBaccalaureat": "Lycée Technique Mahmoud El Mesaadi de Nabeul",
     "descriptionBaccalaureat": "Formation secondaire technique avec une base solide en mathématiques, sciences physiques et technologies de l'information."
+    },
+
+  "allprojects": {
+    "back": "Retour à l'accueil",
+    "title": "Mes Projets",
+    "description": "J'ai travaillé sur des projets backend, frontend, DevOps et full stack, en intégrant la logique métier, les API, la gestion des bases de données et des interfaces utilisateurs modernes et responsives, me permettant de maîtriser l'ensemble du cycle de développement d'une application web.",
+    "hook":"Chaque projet est un nouvel apprentissage",
+    "Tous-les-projets": "Tous les projets",
+    "Backend": "Backend",
+    "Frontend": "Frontend",
+    "Full-Stack": "Full Stack",
+    "DevOps": "DevOps",
+
+    
+    "Projects-List": [
+  {
+    "titre": "Signature électronique Angular",
+    "sujet": "Développement du front-end d’une mini application web avec Angular, permettant de créer et personnaliser une signature électronique de manière simple et rapide.",
+    "skillLearned": "Ce projet m’a permis d’apprendre à utiliser un serveur de base de données local avec Angular afin de tester la logique front-end. J’ai utilisé json-server (json-server --watch db.json) pour simuler une API avant l’intégration d’une base de données externe.",
+    "type": "front"
+  },
+  {
+    "titre": "Pipeline CI/CD DevOps",
+    "sujet": "Mise en place d’un pipeline CI/CD DevOps utilisant Jenkins, GitHub, SonarQube et Docker, avec automatisation des phases de build, de test et de déploiement sur Ubuntu WSL.",
+    "skillLearned": "Ce projet m’a permis de concevoir un pipeline CI/CD complet et d’automatiser les tests et le déploiement des applications.",
+    "type": "devops"
+  },
+  {
+    "titre": "Plateforme Football : Entraînements, Tactiques et Analyses",
+    "sujet": "Projet full stack Spring Boot et Angular réalisé en équipe de 5 personnes, avec une collaboration active et une répartition claire des rôles. J’ai développé les modules Tactiques et Formations, côté front-end et back-end.",
+    "skillLearned": "Ce projet m’a permis de renforcer mes compétences en travail d’équipe, d’intégration front-end/back-end, de consommation d’API et de développement d’un modèle d’IA pour la prédiction.",
+    "type": "fullstack"
+  },
+  {
+    "titre": "Site Web Portfolio",
+    "sujet": "Développement front-end d’un site web portfolio pour un designer graphique, en transformant des maquettes Figma en une interface fonctionnelle, moderne et responsive.",
+    "skillLearned": "Ce projet m’a permis de transformer un design Figma en composants Angular, d’intégrer l’API EmailJS pour l’envoi d’e-mails et de déployer le site via GitHub et Netlify.",
+    "type": "front"
+  },
+  {
+    "titre": "Application de Gestion de Foyer",
+    "sujet": "Développement du back-end d’une application de gestion de foyer avec Spring Boot, intégrant une base de données MySQL pour la gestion des utilisateurs, des ressources et des opérations quotidiennes.",
+    "skillLearned": "Ce projet m’a permis d’apprendre l’architecture SOA, de créer et tester des API avec Postman et de documenter ces API à l’aide de Swagger.",
+    "type": "back"
+  },
+  {
+    "titre": "Système de Gestion de Bibliothèque (Symfony)",
+    "sujet": "Développement full stack d’une application web de gestion de bibliothèque avec Symfony, intégrant une base de données MySQL pour la gestion des livres, des utilisateurs et des emprunts.",
+    "skillLearned": "Ce projet m’a permis de comprendre et d’appliquer l’architecture monolithique, où le front-end et le back-end sont intégrés dans une seule application web.",
+    "type": "fullstack"
+  },
+  {
+    "titre": "Mini Projet Microservices avec Spring Boot",
+    "sujet": "Développement d’un mini projet basé sur une architecture microservices avec Spring Boot, incluant un API Gateway, la découverte de services avec Eureka et un serveur de configuration centralisé. Mise en place d’une authentification sécurisée avec Keycloak.",
+    "skillLearned": "Ce projet m’a permis de concevoir et développer une architecture microservices, de mettre en place un API Gateway, la découverte de services et une authentification sécurisée avec Keycloak.",
+    "type": "back"
+  },
+  {
+    "titre": "Amélioration de la Gestion des Réclamations en Ligne – Tunisie Telecom",
+    "sujet": "Projet de stage d’ingénieur full stack visant à refondre et améliorer la gestion des réclamations en ligne, côté front-end et back-end, avec optimisation de l’interface utilisateur et gestion efficace des données.",
+    "skillLearned": "Ce projet m’a permis d’utiliser Spring Security pour sécuriser les endpoints de l’application et de mettre en place un système d’envoi d’e-mails pour le suivi et la gestion des réclamations.",
+    "type": "fullstack"
+  }
+  ],
+
+
+    "Competences-acquises": "Compétences acquises",
+    "Voir-le-projet": "Voir le projet",
+    "Projet-prive": "Projet privé",
+    "Aucun-projects-found": "Aucun projet trouvé pour ce filtre."
+  },
+
+
+  "contactinfo": {
+    "title": "Informations de Contact",
+    "description": "N'hésitez pas à me contacter par ces différents moyens",
+    "Email": "Email",
+    "Telephone": "Téléphone",
+    "Localisation": "Localisation",
+    "Localisation-info": "Tunisie, Nabeul, Beni khiar 8060, Diar ben salem 8078",
+    "Suivez-moi": "Suivez-moi sur les réseaux sociaux"
+  },
+
+  "contactwhatsapp": {
+    "title": "Contactez-moi via WhatsApp",
+    "description": "Remplissez le formulaire ci-dessous et envoyez-moi un message directement sur WhatsApp",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Entrez votre nom complet",
+    "fullNameError": "Le nom doit contenir au moins 3 caractères",
+    "email": "Email",
+    "emailPlaceholder": "exemple@email.com",
+    "emailError": "Email invalide (ex: exemple@email.com)",
+    "phone": "Téléphone",
+    "phonePlaceholder": "+216 XX XXX XXX",
+    "phoneError": "Le numéro doit contenir au moins 8 chiffres",
+    "objectif": "Objectif",
+    "objectifPlaceholder": "Sélectionnez un objectif",
+    "objectifError": "Veuillez sélectionner un objectif",
+    "message": "Message",
+    "messagePlaceholder": "Écrivez votre message ici...",
+    "messageError": "Le message doit contenir au moins 10 caractères",
+    "valid": "✓ Valide",
+    "required": "*",
+    "sendButton": "Envoyer un message via WhatsApp",
+    "infoText": "En cliquant sur le bouton, vous serez redirigé vers WhatsApp avec votre message pré-rempli.",
+    "caractere": "caractère",
+    "caracteres": "caractères",
+    "whatsappLabels": {
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "objectif": "Objectif",
+      "message": "Message"
+    },
+    "objectifs": {
+      "consultation": "Consultation",
+      "collaboration": "Collaboration",
+      "projetWeb": "Projet Web",
+      "projetMobile": "Projet Mobile",
+      "formation": "Formation",
+      "supportTechnique": "Support Technique",
+      "autre": "Autre"
     }
+  }
 }
