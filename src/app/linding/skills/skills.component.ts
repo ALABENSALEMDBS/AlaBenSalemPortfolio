@@ -29,7 +29,7 @@ export class SkillsComponent {
     { name: 'Responsive Design', icon: 'images/iconSkills/responsive-design.png', category: 'Frontend', isImage: true },
     { name: 'Java', icon: 'images/iconSkills/java-original.png', category: 'Backend', isImage: true },
     { name: 'Spring Boot', icon: 'images/iconSkills/spring-original.png', category: 'Backend', isImage: true },
-    { name: 'Spring Security', icon: 'images/iconSkills/spring-security.png', category: 'Backend', isImage: true },
+    { name: 'Spring Security / Keycloak', icon: 'images/iconSkills/spring-security.png', category: 'Backend', isImage: true },
     { name: 'Microservices', icon: 'images/iconSkills/microservice.png', category: 'Backend', isImage: true },
     { name: 'REST API', icon: 'images/iconSkills/rest-api.png', category: 'Backend', isImage: true },
     { name: 'DevOps', icon: 'images/iconSkills/devops.png', category: 'Others', isImage: true },
@@ -37,7 +37,7 @@ export class SkillsComponent {
     { name: 'Visual Studio', icon: 'images/iconSkills/visualstudio-plain.png', category: 'Tools', isImage: true },
     { name: 'IntelliJ IDEA', icon: 'images/iconSkills/intellij-plain.png', category: 'Tools', isImage: true },
     { name: 'Git', icon: 'images/iconSkills/git.png', category: 'Tools', isImage: true },
-    { name: 'Oracle', icon: 'images/iconSkills/oracle-original.png', category: 'Database', isImage: true },
+    { name: 'PostgreSQL', icon: 'images/iconSkills/postgresql-original.png', category: 'Database', isImage: true },
     { name: 'MySQL', icon: 'images/iconSkills/mysql-original.png', category: 'Database', isImage: true },
     { name: 'MongoDB', icon: 'images/iconSkills/mongodb-original.png', category: 'Database', isImage: true }
   ];

@@ -95,6 +95,14 @@ export class ProjectspageComponent {
       lien: '',
       type: 'fullstack'
     },
+    {
+      titre: 'allprojects.Projects-List.8.titre',
+      sujet: "allprojects.Projects-List.8.sujet",
+      image: 'images/SIRH.png',
+      skillLearned: "allprojects.Projects-List.8.skillLearned",
+      lien: '',
+      type: 'fullstack'
+    },
   ];
 
   get filteredProjects(): Project[] {
@@ -106,5 +114,9 @@ export class ProjectspageComponent {
 
   filterProjects(type: string): void {
     this.selectedFilter = type;
+  }
+
+  isVideo(mediaPath: string): boolean {
+    return mediaPath.toLowerCase().endsWith('.mp4');
   }
 }

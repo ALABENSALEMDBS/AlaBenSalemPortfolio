@@ -18,7 +18,7 @@ import { ThemeService } from './services/theme.service';
 })
 export class AppComponent implements OnInit {
   isCvModalOpen = false;
-  cvPath = '/images/CV_Alaa_Ben_Salem_en.pdf';
+  cvPath = '/images/CV_ALA_BEN_SALEM_FR.pdf';
   cvUrl: SafeResourceUrl;
   isMobile = false;
   showScrollButton = false;

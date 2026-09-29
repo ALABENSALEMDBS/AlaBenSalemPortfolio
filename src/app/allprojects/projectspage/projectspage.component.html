@@ -58,7 +58,20 @@
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of filteredProjects">
         <div class="project-image-container">
-          <img [src]="project.image" [alt]="project.titre" class="project-image">
+          <video
+            *ngIf="isVideo(project.image); else projectImage"
+            [src]="project.image"
+            [attr.aria-label]="project.titre | translate"
+            class="project-image"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata">
+          </video>
+          <ng-template #projectImage>
+            <img [src]="project.image" [alt]="project.titre | translate" class="project-image">
+          </ng-template>
           <div class="project-type-badge" [class]="project.type">
             {{ project.type === 'front' ? 'Frontend' : 
                project.type === 'back' ? 'Backend' : 
