@@ -75,7 +75,7 @@
     "title": "Parcours Académique",
     "subtitle": "Mon chemin vers l'excellence technique",
     "diplomeIngenieur": "Diplôme d'Ingénierie",
-    "yearIngenieur": "2023 - Aujourd'hui",
+    "yearIngenieur": "2023 - 2026",
     "institutionIngenieur": "ESPRIT - École Supérieure Privée d'Ingénierie et de Technologies",
     "descriptionIngenieur": "Formation en génie logiciel et technologies de l'information avec une spécialisation en développement d'applications et systèmes informatiques.",
 
@@ -149,6 +149,12 @@
     "titre": "Amélioration de la Gestion des Réclamations en Ligne – Tunisie Telecom",
     "sujet": "Projet de stage d’ingénieur full stack visant à refondre et améliorer la gestion des réclamations en ligne, côté front-end et back-end, avec optimisation de l’interface utilisateur et gestion efficace des données.",
     "skillLearned": "Ce projet m’a permis d’utiliser Spring Security pour sécuriser les endpoints de l’application et de mettre en place un système d’envoi d’e-mails pour le suivi et la gestion des réclamations.",
+    "type": "fullstack"
+  },
+  {
+    "titre": "Stage de fin d'Études (PFE) – Projet YessClever ERP – YESS CONSULTING",
+    "sujet": "Migration d’un module SIRH vers une architecture Microservices et intégration de l'IA pour détecter 95% des anomalies. Conception et développement de 5+ microservices REST sous Spring Boot et d'interfaces utilisateur dynamiques sous Angular, réduisant le temps de réponse des requêtes de 35%.",
+    "skillLearned": "Mise en place d'une authentification centralisée (Keycloak), du streaming d'événements asynchrones via Apache Kafka, et déploiement conteneurisé (Docker, Kubernetes) via un pipeline CI/CD Jenkins réduisant les temps de déploiement de 50%.",
     "type": "fullstack"
   }
   ],
